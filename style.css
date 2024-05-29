@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
   color: white;
-  background-color: maroon;
+  background-color: white;
 }
 
 main {
@@ -45,9 +45,14 @@ header {
   border-radius: 4px;
 }
 
-.active {
+.header_links a:hover {
   background-color: white;
   color: black;
+}
+
+.active {
+  background-color: gray;
+  color: white;
 }
 
 .profilepic {
@@ -58,8 +63,87 @@ header {
   width: 25%;
 }
 
-/*
-.formsuccess {
-
+/* box-sizing implementation */
+.box-sized-thank-you {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid black 5px;
+  padding: 5px;
+  color: black;
+  text-align: center;
 }
-*/
+
+.smiley {
+  width: 25%;
+}
+
+/* This is for the form */
+.form-group {
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.form-success {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 85px 24px 96px;
+  width: 75%;
+  height: auto;
+  text-align: center;
+  background-color: gray;
+}
+
+/* This is for the grid container */
+.grid_container {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  padding: 50px;
+}
+
+.grid_div1 {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+}
+
+.videogames {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.grid_div1_img {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.grid_div2 {
+  grid-column: 3;
+  grid-row: 3;
+  position: relative;
+}
+
+.militaria {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.grid_div2_img {
+  width: 100%;
+}
+
+.grid_div3 {
+  grid-column: 2;
+  padding: 15px;
+}
+
+.grid_div4 {
+  grid-row: 2;
+  padding: 15px;
+}
